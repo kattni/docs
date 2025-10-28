@@ -14,10 +14,12 @@
     align-items: center;
 }
 
+/* Display the paragraph marker link on H1 - overrides BeeWare theme setting */
 .md-typeset h1 a.headerlink {
     display: unset;
 }
 
+/* All H* with a class - requires custom class tags on each heading */
 h1[class] {
     text-align: center;
     margin-top: 2rem;
