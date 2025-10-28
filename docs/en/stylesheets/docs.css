@@ -33,7 +33,7 @@ h4[class] a.headerlink {
     margin-right: 3rem;
 }
 
-.tutorial-button {
+a.tutorial-button {
     padding: .5rem 1rem;
     font-size: 1.25rem;
     line-height: 1.5;
@@ -45,13 +45,13 @@ h4[class] a.headerlink {
     white-space: nowrap;
     vertical-align: middle;
     border: 1px solid transparent;
-    color: white !important;
+    color: white;
     background-color: #007BFF;
     width: 18rem;
 }
 
-.tutorial-button:hover {
-    color: white !important;
+a.tutorial-button:hover {
+    color: white;
     background-color: #0069D9;
     border-color: #0062CC;
 }
@@ -106,7 +106,7 @@ h4#chaquopy.chaquopy-name {
     width: 40px;
 }
 
-/* Alignment fix on description text for other tools */
+/* Alignment fix on description text for Other tools */
 div[class*="-info"] {
     padding-top: 3px;
 }
