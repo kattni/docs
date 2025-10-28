@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #ECEEEF;
+    background-color: light-dark(#ECEEEF, #343A40);
     border-radius: 5px;
     padding-bottom: 1rem;
 }
