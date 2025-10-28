@@ -1,0 +1,10 @@
+INHERIT: config.yml
+site_name: BeeWare Docs
+site_url: https://docs.beeware.org/pt
+docs_dir: pt
+
+theme:
+  language: pt
+
+extra:
+  translation_type: machine
