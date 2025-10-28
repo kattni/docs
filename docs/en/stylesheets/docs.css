@@ -14,9 +14,18 @@
     align-items: center;
 }
 
-h2#new-to-beeware.tutorial-text a.headerlink,
-h2#toga a.headerlink,
-h2#briefcase a.headerlink {
+.md-typeset h1 a.headerlink {
+    display: unset;
+}
+
+h1[class] {
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 1em;
+}
+
+h2[class] a.headerlink,
+h4[class] a.headerlink {
     display: none;
 }
 
@@ -47,42 +56,61 @@ h2#briefcase a.headerlink {
     border-color: #0062CC;
 }
 
-h1#featured-tools,
-h1#other-tools {
-    text-align: center;
-    margin-top: 2rem;
-}
-
 .featured {
     display: flex;
     flex-direction: row;
 }
 
-.toga, .briefcase {
+.toga,
+.briefcase {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     width: 50%;
 }
 
-h2#featured-name {
+.featured-logo {
+    width: 150px;
+    display: inline-block;
+}
+
+h2.featured-name {
     margin-top: 0;
 }
 
-.podium {
+.other-tools-package {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.podium-logo {
-    width: 55px;
-    margin-right: 20px;
+h4#podium.podium-name {
+    width: 7rem;
+    margin-left: 20px;
+}
+
+h4#rubicon-objective-c.rubicon-name {
+    width: 8rem;
+    margin-left: 20px;
+}
+
+h4#python-apple-support.python-apple-name,
+h4#chaquopy.chaquopy-name {
+    width: 12rem;
+    margin-left: 20px;
+}
+
+.other-tools-logo {
+    display: inline-block;
+    width: 40px;
 }
 
 /* Alignment fix on description text for other tools */
-.podium-info {
+div[class*="-info"] {
     padding-top: 3px;
+}
+
+.podium-info {
+    margin-left: 2px;
 }
