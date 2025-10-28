@@ -1,0 +1,118 @@
+.tutorial {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: light-dark(#ECEEEF, #343A40);
+    border-radius: 5px;
+    padding-bottom: 1rem;
+}
+
+.tutorial-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Display the paragraph marker link on H1 - overrides BeeWare theme setting */
+.md-typeset h1 a.headerlink {
+    display: unset;
+}
+
+/* All H* with a class - requires custom class tags on each heading */
+h1[class] {
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 1em;
+}
+
+h2[class] a.headerlink,
+h4[class] a.headerlink {
+    display: none;
+}
+
+.tutorial-logo {
+    margin-right: 3rem;
+}
+
+a.tutorial-button {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    display: inline-block;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    color: white;
+    background-color: #007BFF;
+    width: 18rem;
+}
+
+a.tutorial-button:hover {
+    color: white;
+    background-color: #0069D9;
+    border-color: #0062CC;
+}
+
+.featured {
+    display: flex;
+    flex-direction: row;
+}
+
+.toga,
+.briefcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+.featured-logo {
+    width: 150px;
+    display: inline-block;
+}
+
+h2.featured-name {
+    margin-top: 0;
+}
+
+.other-tools-package {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h4#podium.podium-name {
+    width: 7rem;
+    margin-left: 20px;
+}
+
+h4#rubicon-objective-c.rubicon-name {
+    width: 8rem;
+    margin-left: 20px;
+}
+
+h4#python-apple-support.python-apple-name,
+h4#chaquopy.chaquopy-name {
+    width: 12rem;
+    margin-left: 20px;
+}
+
+.other-tools-logo {
+    display: inline-block;
+    width: 40px;
+}
+
+/* Alignment fix on description text for Other tools */
+div[class*="-info"] {
+    padding-top: 3px;
+}
+
+.podium-info {
+    margin-left: 2px;
+}

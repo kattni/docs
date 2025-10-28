@@ -1,0 +1,25 @@
+[global]
+flavor = "mkdocs"
+include = ["**/*.md"]
+exclude = []
+respect-gitignore = true
+force-exclude = true
+
+# Disable rules:
+# MD001: Heading check - this page utilises odd heading orders
+# MD002: Heading check - first heading is not H1
+# MD025: Heading check - multiple top-level headings
+# MD033: Inline HTML found - Yep. There's a lot of it.
+# MD041: Heading checks - first line is not H1
+disable = ["MD001", "MD002", "MD025", "MD033", "MD041"]
+
+[MD013]  # Line length
+line_length = 999999  # Force reflow to paragraph content to remove linebreaks
+reflow = true
+reflow_mode = "normalize"
+
+[MD026]  # Remove punctuation at the end of headings
+punctuation = ",;:"
+
+[MD033]  # No inline HTML
+allowed_elements = ["nospell",]  # pyspelling inline disable tag

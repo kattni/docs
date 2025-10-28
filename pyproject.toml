@@ -1,0 +1,51 @@
+[project]
+dynamic = ["version"]
+name = "docs"
+description = "The BeeWare documentation landing page."
+readme = "README.md"
+requires-python = ">= 3.12"
+license = "BSD-3-Clause"
+license-files = [
+    "LICENSE",
+]
+authors = [
+    {name="Kattni", email="kattni@kattni.com"},
+]
+maintainers = [
+    {name="BeeWare Team", email="team@beeware.org"},
+]
+
+[dependency-groups]
+pre-commit = [
+    "pre-commit == 4.3.0",
+]
+
+tox-uv = [
+    "tox-uv == 1.28.0",
+]
+
+dev = [
+    {include-group = "pre-commit"},
+    {include-group = "tox-uv"},
+]
+
+docs = [
+    "beeware-docs-tools @ git+https://github.com/beeware/beeware-docs-tools",
+    "click==8.2.1",  # DO NOT UPGRADE - 8.3.0 breaks MkDocs live serve
+    "deepl==1.23.0",
+    "markdown-checker==0.2.5",
+    "mistletoe==1.5.0",
+    "mkdocs-autorefs==1.4.3",
+    "mkdocs-literate-nav==0.6.2",
+    "mkdocs-macros-plugin==1.4.1",
+    "mkdocs-material==9.6.22",
+    "mkdocs==1.6.1",
+    "mkdocstrings-python==1.18.2",
+    "pymdown-extensions==10.16.1",
+    "pyspelling==2.11",
+    "python-Levenshtein==0.27.1",
+    "PyYAML==6.0.3",
+    "polib==1.2.0",
+    "ruff==0.14.2",
+    "translate-toolkit==3.16.3",
+]
