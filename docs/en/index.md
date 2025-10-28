@@ -123,6 +123,6 @@ TODO: Fill in.
 
 ## BeeWare community
 
-Join the BeeWare community!
+Join the BeeWare community! TODO: More.
 
 Follow us on Mastodon [@beeware@fosstodon.org](https://fosstodon.org/@beeware) for updates and info. For questions, information, sharing your projects, and more, join us on the [BeeWare Discord](https://beeware.org/bee/chat/).
